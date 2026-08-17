@@ -1,0 +1,12 @@
+{
+  "projectId": "durood-goal-tracker",
+  "appId": "1:560174093833:web:b266beb0be5a6380e64ad8",
+  "apiKey": "AIzaSyCfb_q6-HdBksyODgFLcFzvUh1zUemVyNM",
+  "authDomain": "durood-goal-tracker.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "durood-goal-tracker.firebasestorage.app",
+  "messagingSenderId": "560174093833",
+  "measurementId": "",
+  "oAuthClientId": "",
+  "recaptchaSiteKey": ""
+}

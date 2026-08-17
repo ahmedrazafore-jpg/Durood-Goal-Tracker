@@ -1,0 +1,6 @@
+{
+  "name": "Durood Goal Tracker",
+  "description": "Mobile-first Progressive Web App for Rabi-ul-Awwal Durood Campaign featuring class rankings, submission interface, and admin dashboard",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

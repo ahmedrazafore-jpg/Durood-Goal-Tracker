@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "campaign",
+      "fields": [
+        { "name": "title", "type": "string" },
+        { "name": "target", "type": "number" },
+        { "name": "totalRecited", "type": "number" },
+        { "name": "remaining", "type": "number" },
+        { "name": "progressPercentage", "type": "number" },
+        { "name": "startDate", "type": "string" },
+        { "name": "endDate", "type": "string" },
+        { "name": "isActive", "type": "boolean" },
+        { "name": "updatedAt", "type": "string" }
+      ]
+    },
+    {
+      "name": "stats",
+      "fields": [
+        { "name": "campaignTarget", "type": "number" },
+        { "name": "totalRecited", "type": "number" },
+        { "name": "remainingTarget", "type": "number" },
+        { "name": "progressPercentage", "type": "number" },
+        { "name": "totalSubmissionsCount", "type": "number" },
+        { "name": "activeClassesCount", "type": "number" },
+        { "name": "daysRemaining", "type": "number" }
+      ]
+    },
+    {
+      "name": "classes",
+      "fields": [
+        { "name": "name", "type": "string" },
+        { "name": "totalDurood", "type": "number" },
+        { "name": "rank", "type": "number" }
+      ]
+    },
+    {
+      "name": "submissions",
+      "fields": [
+        { "name": "studentName", "type": "string" },
+        { "name": "className", "type": "string" },
+        { "name": "duroodCount", "type": "number" },
+        { "name": "submittedAt", "type": "string" },
+        { "name": "status", "type": "string" },
+        { "name": "count", "type": "number" },
+        { "name": "timestamp", "type": "string" },
+        { "name": "verified", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "admins",
+      "fields": [
+        { "name": "uid", "type": "string" },
+        { "name": "name", "type": "string" },
+        { "name": "email", "type": "string" },
+        { "name": "role", "type": "string" },
+        { "name": "isActive", "type": "boolean" },
+        { "name": "createdAt", "type": "string" }
+      ]
+    }
+  ]
+}
