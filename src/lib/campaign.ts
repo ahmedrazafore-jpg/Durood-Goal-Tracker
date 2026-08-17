@@ -442,7 +442,10 @@ export function subscribeToCampaignStats(
       }
     },
     (err) => {
-      console.error('Campaign active listener error:', err);
+      console.warn('Campaign active listener network notice (offline or connecting):', err);
+      if (!hasReceivedData) {
+        onData(DEFAULT_CAMPAIGN_DOC);
+      }
       if (onError && !isUnsubscribed) onError(err);
     }
   );

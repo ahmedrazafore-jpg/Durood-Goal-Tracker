@@ -28,9 +28,16 @@ export const ensureAuth = async () => {
 async function testConnection() {
   try {
     await getDocFromServer(doc(db, 'test', 'connection'));
-  } catch (error) {
-    if (error instanceof Error && error.message.includes('the client is offline')) {
-      console.warn('Please check your Firebase configuration or internet connection.');
+  } catch (error: any) {
+    const msg = error instanceof Error ? error.message : String(error);
+    const code = error?.code || '';
+    if (
+      msg.includes('the client is offline') ||
+      msg.includes('unavailable') ||
+      code === 'unavailable' ||
+      code === 'failed-precondition'
+    ) {
+      console.info('Firestore initialized in offline/resilient mode; will automatically synchronize when connection is available.');
     }
   }
 }
