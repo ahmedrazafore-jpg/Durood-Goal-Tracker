@@ -1,7 +1,8 @@
 import React from 'react';
 import { ActiveTab } from '../types';
 import { Sparkles, Moon, Smartphone, Shield, BookOpen } from 'lucide-react';
-import duroodIcon from '../assets/images/durood_master_icon.png';
+
+const DUROOD_ICON_PATH = '/assets/images/durood_master_icon.png';
 
 interface HeaderProps {
   activeTab: ActiveTab;
@@ -24,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-2.5 sm:gap-3">
             <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 p-0.5 shadow-md shadow-amber-500/20 flex-shrink-0">
               <img
-                src={duroodIcon}
+                src={DUROOD_ICON_PATH}
                 alt="درود مہم آئیکن"
                 referrerPolicy="no-referrer"
                 className="w-full h-full rounded-[10px] sm:rounded-[14px] object-cover"

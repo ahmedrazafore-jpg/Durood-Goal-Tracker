@@ -1,6 +1,7 @@
 import React from 'react';
 import { Smartphone, Download, X } from 'lucide-react';
-import duroodIcon from '../assets/images/durood_master_icon.png';
+
+const DUROOD_ICON_PATH = '/assets/images/durood_master_icon.png';
 
 interface PwaBannerProps {
   onInstall: () => void;
@@ -12,7 +13,7 @@ export const PwaBanner: React.FC<PwaBannerProps> = ({ onInstall, onDismiss }) =>
     <div className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-950 text-white rounded-2xl p-4 shadow-lg border border-amber-400/30 flex flex-col sm:flex-row items-center justify-between gap-3 relative overflow-hidden bg-islamic-pattern font-urdu">
       <div className="flex items-center gap-3">
         <img
-          src={duroodIcon}
+          src={DUROOD_ICON_PATH}
           alt="Durood App Icon"
           referrerPolicy="no-referrer"
           className="w-12 h-12 rounded-xl object-cover shadow-md border border-amber-400/40 flex-shrink-0"

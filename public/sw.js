@@ -1,5 +1,5 @@
 // Service Worker for Durood Campaign PWA
-const CACHE_NAME = 'durood-campaign-v10';
+const CACHE_NAME = 'durood-campaign-v12';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

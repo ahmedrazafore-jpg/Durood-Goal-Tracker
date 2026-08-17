@@ -9,6 +9,18 @@
       "destination": "/manifest.json"
     },
     {
+      "source": "/icon.png",
+      "destination": "/icon.png"
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "/apple-touch-icon.png"
+    },
+    {
+      "source": "/favicon:ext(.*)",
+      "destination": "/favicon:ext"
+    },
+    {
       "source": "/assets/(.*)",
       "destination": "/assets/$1"
     },

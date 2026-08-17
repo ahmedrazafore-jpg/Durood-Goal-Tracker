@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Share2, MoreVertical, PlusSquare, CheckCircle2 } from 'lucide-react';
-import duroodIcon from '../assets/images/durood_master_icon.png';
+
+const DUROOD_ICON_PATH = '/assets/images/durood_master_icon.png';
 
 interface PwaInstallGuideModalProps {
   isOpen: boolean;
@@ -33,7 +34,7 @@ export const PwaInstallGuideModal: React.FC<PwaInstallGuideModalProps> = ({
         {/* Header Icon & Title */}
         <div className="flex items-center gap-3 mb-4">
           <img
-            src={duroodIcon}
+            src={DUROOD_ICON_PATH}
             alt="Durood App Icon"
             referrerPolicy="no-referrer"
             className="w-12 h-12 rounded-2xl object-cover shadow-lg border border-amber-400/40 flex-shrink-0"
